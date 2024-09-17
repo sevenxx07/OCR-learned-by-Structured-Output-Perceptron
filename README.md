@@ -39,6 +39,7 @@ strategies and a way how to evaluate their performance.
  error rates
  * Well-suited for scenarios with a large number of classes.
  * Fasttraining time.<br />
+ <br />
  Disadvantages:<br />
  * Ignores correlations between classes.
  * Maynotperform well when classes are highly imbalanced.<br />
@@ -59,6 +60,7 @@ the width of the input image I or the feature matrix X, respectively.
  * Suitable for tasks where the order of elements matters.
  * Performance on sequences that are in the same language will have approximately
  similar error rates<br />
+ <br />
  Disadvantages:<br />
  * Training and predicting sequences may be computationally expensive for long
  sequences.
@@ -82,6 +84,7 @@ we can rewrite it as<br />
  * Handles fixed-length sequences efficiently.
  * Bestperformance
  * Accounts for relationships within sequences through weights and biases.<br />
+ <br />
  Disadvantages:<br />
  * Maynotgeneralize well to sequences of very varying lengths.
  * Cannot be used on sequences, which are not in dataset<br />
