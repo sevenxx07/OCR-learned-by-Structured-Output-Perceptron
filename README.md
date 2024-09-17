@@ -43,6 +43,7 @@ strategies and a way how to evaluate their performance.
  Disadvantages:<br />
  * Ignores correlations between classes.
  * Maynotperform well when classes are highly imbalanced.<br />
+
 Given a feature representation X = (x1, . . . , xL) of an input image I, the characters are
 predicted for each sub-image independently by a multi-class linear classifier.<br />
 ![obrazek](https://github.com/user-attachments/assets/17bea397-1272-4dc4-947c-43e19a58a7cc)<br />
@@ -66,7 +67,8 @@ the width of the input image I or the feature matrix X, respectively.
  sequences.
  * Sensitivity to noise between pairwise dependencies.
  * notideal and for sequences which are in a different language<br />
- The characters are predicted by a linear classifier<br />
+
+The characters are predicted by a linear classifier<br />
 ![obrazek](https://github.com/user-attachments/assets/09be4b19-7311-426f-87c3-d55c7c84a4dd)<br />
 where the parameters are w = (w1, . . . , w|A|) ∈ Rd·|A|, b = (b1, . . . , b|A|) ∈ R|A| and the pair-
 wise dependency function g : A × A → R.
@@ -88,7 +90,8 @@ we can rewrite it as<br />
  Disadvantages:<br />
  * Maynotgeneralize well to sequences of very varying lengths.
  * Cannot be used on sequences, which are not in dataset<br />
- Let us assume that the set of hidden sequences Y ⊂ A∗ contains a small number of elements.
+
+Let us assume that the set of hidden sequences Y ⊂ A∗ contains a small number of elements.
 For example, in our application Y contains just 20 names (see Figure 2). In this case we can
 predict the sequences by a linear classifier<br />
 ![obrazek](https://github.com/user-attachments/assets/793392d0-05c8-4861-8cd3-3eebe26ae5ed)<br />
